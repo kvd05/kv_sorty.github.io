@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #1abc9c;
+    --secondary-color: #16a085;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+  }
+/* Title*/
+  .title {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 1.2em;
+    padding-block: 0.5em;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /*Navigation bar*/
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    font-size: 16px;
+    min-height: 70px;
+    padding-block: 0.6em;
+    background-color: var(--secondary-color);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+.nav_button {
+  background-color: #1ABC9C;
+  border-radius: 8px;
+  transition: 0.3s;
+  border: 2px solid #1ABC9C; 
+  color: #fff;
+  padding: 12px 32px;
+  font-size: 13px;
+ /* box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;*/
+}
+
+.nav_button:hover {
+    
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .txt{
+      color: #fff;
+      font-size: 13px;
+      /* //font-family: "Roboto", sans-serif; */
+  }
+  /* box to display visualization */
+  .center {
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Added shadow to make page border free */
+    height: 420px;
+    width: 410px;
+    max-height: 731px;
+  }
+  .array {
+    display: flex;
+    align-items: flex-start;
+    min-height: 100%;
+    height: 100%;
+    padding: 1rem;
+    flex-direction: row;
+  }
+  .bar {
+    display: flex;
+    align-items: flex-start;
+    flex: 0.5;
+    width: 0.000001%;
+    margin: 1px;
+    background-color: #d6d6d6;
+    resize: horizontal;
+    position: relative;
+    transition: all 0.4s ease-in;
+  }
+
+  .bar.curr_min {
+    background-color: #ff1493;
+    border-color: #ff1493;
+    color: white;
+    transition: all 0.4s ease-out;
+  }
+
+  .bar.curr_bar {
+    border-color: #50c5b7;
+    background-color: #50c5b7;
+    color: white;
+    transition: all 0.4s ease-out;
+  }
+
+  .bar.done {
+    background-color: #9cec5b;
+    border-color: #9cec5b;
+    color: white;
+    transition: all 0.4s ease-out;
+  }
+
+  
+
